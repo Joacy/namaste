@@ -7,16 +7,16 @@ import {
     Logo,
     Form,
     Text,
+    Description,
     Input,
     ButtonSubmit,
-    ForgotPassword,
+    RememberPassword,
 } from './styles';
 
-function Login () {
+function PasswordReset () {
     const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
 
-    function handleLogin (e) {
+    function handlePasswordReset (e) {
         e.preventDefault();
     };
 
@@ -25,8 +25,12 @@ function Login () {
             <Logo>
                 <img src={logo} alt="Namastê" />
             </Logo>
-            <Form onSubmit={handleLogin}>
-                <Text>Faça seu login</Text>
+            <Form onSubmit={handlePasswordReset}>
+                <Text>Recupere sua senha</Text>
+
+                <Description>
+                    Digite seu e-mail de cadastro para receber as instruções de redefinição de senha
+                </Description>
 
                 <Input
                     value={email}
@@ -38,26 +42,14 @@ function Login () {
                     required
                 />
 
-                <Input
-                    value={password}
-                    onChange={e => setPassword(e.target.value)}
-                    type="password"
-                    name="password"
-                    id="password"
-                    placeholder="Senha"
-                    required
-                />
-
                 <ButtonSubmit type="submit" variant="contained" color="primary" size="large">
-                    Entrar
+                    Recuperar senha
                 </ButtonSubmit>
 
-                <ForgotPassword to='/password-reset'>
-                    Esqueceu sua <span>senha?</span>
-                </ForgotPassword>
+                <RememberPassword to='/'>Lembrou da <span>senha?</span></RememberPassword>
             </Form>
         </ContainerStyled>
     );
 }
 
-export default Login;
+export default PasswordReset;

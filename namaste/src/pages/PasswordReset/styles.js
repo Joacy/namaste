@@ -35,7 +35,15 @@ export const Form = styled.form`
 
 export const Text = styled.h2`
     color: #222;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
+`;
+
+export const Description = styled.h3`
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.4;
+    color: #c6c6c6;
+    margin-bottom: 20px;
 `;
 
 export const Input = styled.input`
@@ -60,7 +68,7 @@ export const ButtonSubmit = styled(Button)`
     }
 `;
 
-export const ForgotPassword = styled(Link)`
+export const RememberPassword = styled(Link)`
     text-decoration: none;
     color: #222;
     text-align: center;
