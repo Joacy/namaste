@@ -29,20 +29,20 @@ export const Form = styled.form`
     margin: 0 auto;
     width: 400px;
     padding: 40px 30px;
-    background: #fff;
+    background: #fbfbfb;
     border-radius: 4px;
 `;
 
 export const Text = styled.h2`
-    color: #222;
+    color: #515151;
     margin-bottom: 20px;
 `;
 
 export const Description = styled.h3`
-    font-size: 16px;
+    font-size: 18px;
     font-weight: normal;
     line-height: 1.4;
-    color: #c6c6c6;
+    color: #7a7a7a;
     margin-bottom: 20px;
 `;
 
@@ -52,7 +52,8 @@ export const Input = styled.input`
     padding: 10px 15px;
     height: 42px;
     margin-bottom: 20px;
-    color: #222;
+    color: #515151;
+    background: transparent;
 `;
 
 export const ButtonSubmit = styled(Button)`
@@ -70,7 +71,7 @@ export const ButtonSubmit = styled(Button)`
 
 export const RememberPassword = styled(Link)`
     text-decoration: none;
-    color: #222;
+    color: #515151;
     text-align: center;
     font-weight: normal;
     font-size: 13px;

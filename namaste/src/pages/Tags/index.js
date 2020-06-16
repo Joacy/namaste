@@ -4,13 +4,13 @@ import Header from '../../components/Header';
 
 import { Container } from './styles';
 
-function Dashboard () {
+function Tags () {
     return (
         <Container>
-            <Header nome='Dashboard' />
-            <h3>Dashboard</h3>
+            <Header nome='Tags' />
+            <h3>Tags</h3>
         </Container>
     );
 }
 
-export default Dashboard;
+export default Tags;

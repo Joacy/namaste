@@ -4,13 +4,13 @@ import Header from '../../components/Header';
 
 import { Container } from './styles';
 
-function Dashboard () {
+function Respiracoes () {
     return (
         <Container>
-            <Header nome='Dashboard' />
-            <h3>Dashboard</h3>
+            <Header nome='Respirações' />
+            <h3>Respiracoes</h3>
         </Container>
     );
 }
 
-export default Dashboard;
+export default Respiracoes;

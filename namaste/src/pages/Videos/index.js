@@ -4,13 +4,13 @@ import Header from '../../components/Header';
 
 import { Container } from './styles';
 
-function Dashboard () {
+function Videos () {
     return (
         <Container>
-            <Header nome='Dashboard' />
-            <h3>Dashboard</h3>
+            <Header nome='Vídeos' />
+            <h3>Dados Externos</h3>
         </Container>
     );
 }
 
-export default Dashboard;
+export default Videos;

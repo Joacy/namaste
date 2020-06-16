@@ -12,7 +12,7 @@ export default createGlobalStyle`
         width: 100%;
         height: 100%;
         background: #4e77c1;
-        color: #fff;
+        color: #fdfdfd;
         font-family: 'Roboto', sans-serif;
     }
     
