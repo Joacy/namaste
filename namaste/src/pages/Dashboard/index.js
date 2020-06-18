@@ -26,7 +26,7 @@ function Dashboard () {
                         xs={12}
                         md={5}
                     >
-                        <CardDashboard title="Meditações Hoje" icone="" qtd="100" />
+                        <CardDashboard title="Meditações Hoje" icone="FaUser" qtd="100" />
                     </Grid>
 
                     <Grid
@@ -34,7 +34,7 @@ function Dashboard () {
                         xs={12}
                         md={5}
                     >
-                        <CardDashboard title="Usuários Online Atualmente" icone="" qtd="24" />
+                        <CardDashboard title="Usuários Online Atualmente" icone="FaBullseye" qtd="24" />
                     </Grid>
 
                     <Grid
@@ -42,7 +42,7 @@ function Dashboard () {
                         xs={12}
                         md={5}
                     >
-                        <CardDashboard title="Usuários Totais" icone="" qtd="1254" />
+                        <CardDashboard title="Usuários Totais" icone="FaUsers" qtd="1254" />
                     </Grid>
 
                     <Grid
@@ -50,7 +50,7 @@ function Dashboard () {
                         xs={12}
                         md={5}
                     >
-                        <CardDashboard title="Usuários Premiums Ativos" icone="" qtd="220" />
+                        <CardDashboard title="Usuários Premiums Ativos" icone="FaCrown" qtd="220" />
                     </Grid>
                 </Grid>
             </StyledBox>

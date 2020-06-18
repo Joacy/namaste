@@ -16,6 +16,6 @@ export const StyledBox = styled(Box)`
         width: 100%;
         height: calc(100vh - 82px);
         color: #515151;
-        padding: 15px;
+        padding: 25px 35px;
     }
 `;

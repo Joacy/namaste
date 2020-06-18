@@ -11,11 +11,31 @@ export const Container = styled.div`
 export const StyledBox = styled(Box)`
     &&{
         display: flex;
-        flex-direction: column;
         background: #f2f2f2;
         width: 100%;
         height: calc(100vh - 82px);
         color: #515151;
-        padding: 15px;
+        padding: 25px 35px;
+    }
+
+    .links{
+        display: flex;
+        
+        a + a {
+            margin-left: 25px;
+        }
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100px;
+
+            img {
+                height: 100%;
+                width: auto;
+                object-fit: contain;
+            }
+        }
     }
 `;
