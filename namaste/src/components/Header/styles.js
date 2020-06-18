@@ -7,6 +7,7 @@ export const HeaderStyled = styled.header`
     padding: 30px 50px;
     width: 100%;
     background: #fbfbfb;
+    border-bottom: 1px solid #cccccc77;
 `;
 
 export const PageAtual = styled.div`
@@ -25,6 +26,10 @@ export const Links = styled.ul`
     li {
         font-size: 16px;
         font-weight: 400;
+    }
+
+    li:last-child{
+        color: #ea4335;
     }
 
     li + li{

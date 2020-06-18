@@ -2,13 +2,18 @@ import React from 'react';
 
 import Header from '../../components/Header';
 
-import { Container } from './styles';
+import {
+    Container,
+    StyledBox
+} from './styles';
 
 function DadosExternos () {
     return (
         <Container>
             <Header nome='Dados Externos' />
-            <h3>Dados Externos</h3>
+            <StyledBox>
+                <h3>Dados Externos</h3>
+            </StyledBox>
         </Container>
     );
 }

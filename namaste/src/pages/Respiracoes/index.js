@@ -2,13 +2,18 @@ import React from 'react';
 
 import Header from '../../components/Header';
 
-import { Container } from './styles';
+import {
+    Container,
+    StyledBox
+} from './styles';
 
 function Respiracoes () {
     return (
         <Container>
             <Header nome='Respirações' />
-            <h3>Respiracoes</h3>
+            <StyledBox>
+                <h3>Respiracoes</h3>
+            </StyledBox>
         </Container>
     );
 }

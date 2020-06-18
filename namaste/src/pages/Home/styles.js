@@ -2,19 +2,32 @@ import styled from 'styled-components';
 import {
     Tabs,
     Tab,
-    Box
+    Grid,
 } from '@material-ui/core';
 
-export const Container = styled.div`
-    display: flex;
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-    
+export const Container = styled(Grid)`
     .tab-panel{
-        width: 100%;
+        background: #f2f2f2;
+        color: #515151;
     }
 `;
+
+export const Title = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    h2{
+        font-weight: 400;
+        text-align: center;
+        border-top: 1px solid transparent;
+        border-bottom: 1px solid #ffffff77;
+        padding: 25px 30px;
+        height: 82px;
+        width: 90%;
+    }
+`
 
 export const StyledTabs = styled(Tabs)`
     &&{
@@ -23,8 +36,12 @@ export const StyledTabs = styled(Tabs)`
         align-content: center;
         justify-content: center;
         background: #4e77c1;
-        padding: 15px 0;
-        width: 300px;
+        padding: 20px 0;
+        width: 100%;
+        
+        button.MuiTab-root{
+            max-width: none;
+        }
 
         span.MuiTabs-indicator {
             display: none;
@@ -40,6 +57,7 @@ export const StyledTab = styled(Tab)`
         padding: 5px 15px;
         color: #fff;
         font-weight: 400;
+        width: 100%;
 
         span.MuiTab-wrapper{
             display: flex;
@@ -53,16 +71,5 @@ export const StyledTab = styled(Tab)`
             font-weight: 500;
             background: #40629e;
         }
-    }
-`;
-
-export const StyledBox = styled(Box)`
-    &&{
-        display: flex;
-        background: #f2f2f2;
-        width: 100%;
-        height: 100vh;
-        color: #515151;
-        padding: 15px;
     }
 `;

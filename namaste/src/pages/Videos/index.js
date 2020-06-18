@@ -2,13 +2,18 @@ import React from 'react';
 
 import Header from '../../components/Header';
 
-import { Container } from './styles';
+import {
+    Container,
+    StyledBox
+} from './styles';
 
 function Videos () {
     return (
         <Container>
             <Header nome='Vídeos' />
-            <h3>Dados Externos</h3>
+            <StyledBox>
+                <h3>Dados Externos</h3>
+            </StyledBox>
         </Container>
     );
 }
