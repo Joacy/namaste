@@ -10,7 +10,6 @@ export const Container = styled.div`
 
 export const StyledBox = styled(Box)`
     &&{
-        display: flex;
         background: #f2f2f2;
         width: 100%;
         height: calc(100vh - 82px);
@@ -28,13 +27,28 @@ export const StyledBox = styled(Box)`
         a {
             display: flex;
             align-items: center;
-            justify-content: center;
             height: 100px;
 
             img {
                 height: 100%;
                 width: auto;
                 object-fit: contain;
+            }
+        }
+    }
+
+    @media screen and (max-width: 576px){
+        .links {
+            flex-direction: column;
+         
+            a + a {
+                margin-left: 0;
+                margin-top: 25px;
+            }
+         
+            a {
+                justify-content: center;
+                width: 100%;
             }
         }
     }

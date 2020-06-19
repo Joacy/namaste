@@ -68,11 +68,9 @@ export default function Home () {
         <Container
             container
             spacing={0}
-            xs={12}
         >
             <Grid
                 item
-                spacing={0}
                 xs={12}
                 md={2}
             >
@@ -131,7 +129,6 @@ export default function Home () {
 
             <Grid
                 item
-                spacing={0}
                 xs={12}
                 md={10}
             >
